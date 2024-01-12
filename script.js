@@ -2,6 +2,7 @@ const searchForm = document.querySelector(".search-form");
 const searchInput = document.querySelector(".search-input");
 const list = document.querySelector(".list");
 const searchBtn = document.querySelector(".search-btn");
+let timeout;
 
 function fetchGifs(handleSearch) {
   const API_KEY = "1I30QlcjptfbMRUOGz34S0hmWF30aT7N";
@@ -38,12 +39,17 @@ function fetchGifs(handleSearch) {
 
 function handleSearch() {
   const searchElement = searchInput.value.trim();
-  if (searchElement) {
+  if (searchElement.length > 3) {
     fetchGifs(searchElement);
+    timeout.setTimeout(() => {
+      fetchGifs(searchElement);
+    }, 700);
   } else {
     console.log("Введите запрос для поиска");
   }
 }
+
+searchInput.addEventListener("input", handleSearch);
 
 searchInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
