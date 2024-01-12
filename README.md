@@ -1,27 +1,27 @@
 <h1>neobis-front-giphyAPI</h1>
 
-<h2>Описание</h2>
+<h2>Description</h2>
 
-- Изучение тем по сетевым запросам и разработка мини-сайта Giphy API с функционалом вывода гифок, который помогает лучше понять как работают сетевые запросы.
+- Exploring topics on network requests and developing a mini website using the Giphy API with the functionality of displaying GIFs to better understand how network requests work.
 
-<h2>Материалы для изучения</h2>
+<h2>Materials for Study</h2>
 
     - Promise, async/await, fetch()
-    - Виды функций и их отличия
+    - Types of functions and their differences
     - setTimeout, setInterval, clearTimeout, clearInterval
-    - Деструктуризация, spread operator
+    - Destructuring, spread operator
     - Event Loop
-    - Что такое микротаски и макротаски
+    - What are microtasks and macrotasks
 
-<h2>Технологии</h2>
+<h2>Technologies</h2>
 
-<h4>Технологии, которые используются в проекте.<h4>
+<h4>Technologies used in the project.</h4>
 
     - HTML
     - CSS
-    - БЭМ
-    - JS(DOM, Promise, fetch())
+    - BEM
+    - JS (DOM, Promise, fetch())
 
-<h2>Демо</h2>
+<h2>Demo</h2>
 
 https://isehou.github.io/neobis-front-giphyAPI/
