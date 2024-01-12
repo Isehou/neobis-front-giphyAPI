@@ -1,3 +1,4 @@
+const searchForm = document.querySelector(".search-form");
 const searchInput = document.querySelector(".search-input");
 const list = document.querySelector(".list");
 const searchBtn = document.querySelector(".search-btn");
@@ -33,9 +34,6 @@ function fetchGifs(handleSearch) {
       });
     })
     .catch((error) => console.error("Error:", error));
-  document.querySelector(".search-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-  });
 }
 
 function handleSearch() {
@@ -56,4 +54,8 @@ searchInput.addEventListener("keypress", (e) => {
 
 searchBtn.addEventListener("click", () => {
   handleSearch();
+});
+
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 });
