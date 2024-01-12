@@ -16,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 50px;
   width: 100%;
   height: 140px;
   background: rgb(180, 58, 136);
@@ -47,25 +47,25 @@ header {
 
 /* search block */
 .search-form {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  position: relative;
+  display: inline-block;
 }
 .search-input {
-  padding: 25px;
+  padding: 25px 60px 25px 25px;
   width: 300px;
   height: 50px;
   border-radius: 25px;
   border: none;
   font-size: 14pt;
 }
-.search-form img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.search-btn {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 5%;
   width: 35px;
   height: 35px;
-  margin: 25px;
+  /* margin: 25px; */
   background: none;
   border: none;
   font-size: 17px;
@@ -74,7 +74,7 @@ header {
 
 /* main-container */
 .main-wrapper {
-  padding: 30px;
+  padding: 30px 50px;
 }
 .list {
   display: flex;
