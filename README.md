@@ -24,4 +24,4 @@
 
 <h2>Демо</h2>
 
-https://isehou.github.io/********/
+https://isehou.github.io/neobis-front-giphyAPI/
